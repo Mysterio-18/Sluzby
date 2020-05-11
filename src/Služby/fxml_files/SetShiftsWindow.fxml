@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.PopUpWindowsController">
+     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Všední den" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+      <GridPane.margin>
+         <Insets top="10.0" />
+      </GridPane.margin>
+   </Text>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Víkend" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+      <GridPane.margin>
+         <Insets top="10.0" />
+      </GridPane.margin>
+   </Text>
+    <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <CheckBox fx:id="weekday_D1" mnemonicParsing="false" text="D1">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_D2" layoutX="10.0" layoutY="26.0" mnemonicParsing="false" text="D2">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O12" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O12">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O13" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O13">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O19" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O19">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O21" mnemonicParsing="false" text="O21">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+      <padding>
+         <Insets bottom="20.0" left="20.0" />
+      </padding>
+    </VBox>
+    <VBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="36.0" prefHeight="200.0" prefWidth="100.0"
+          style="-fx-border-color: transparent black transparent transparent; -fx-border-width:1;"
+          GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <padding>
+            <Insets bottom="20.0" left="20.0"/>
+        </padding>
+        <CheckBox fx:id="weekday_D1b" mnemonicParsing="false" text="D1">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_D2b" layoutX="10.0" layoutY="26.0" mnemonicParsing="false" text="D2">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O12b" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O12">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O13b" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O13">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O19b" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O19">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekday_O21b" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="O21">
+            <padding>
+                <Insets top="10.0"/>
+            </padding>
+        </CheckBox>
+    </VBox>
+    <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <CheckBox fx:id="weekend_D1" mnemonicParsing="false" text="D1">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_D2" mnemonicParsing="false" text="D2">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O12" mnemonicParsing="false" text="O12">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O13" mnemonicParsing="false" text="O13">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O19" mnemonicParsing="false" text="O19">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O21" mnemonicParsing="false" text="O21">
+           <padding>
+               <Insets top="10.0" />
+           </padding>
+        </CheckBox>
+      <padding>
+         <Insets bottom="20.0" left="10.0" top="10.0" />
+      </padding>
+    </VBox>
+    <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <padding>
+            <Insets bottom="20.0" left="10.0" top="10.0"/>
+        </padding>
+        <CheckBox fx:id="weekend_D1b" mnemonicParsing="false" text="D1">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_D2b" mnemonicParsing="false" text="D2">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O12b" mnemonicParsing="false" text="O12">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O13b" mnemonicParsing="false" text="O13">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O19b" mnemonicParsing="false" text="O19">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+        <CheckBox fx:id="weekend_O21b" mnemonicParsing="false" text="O21">
+           <padding>
+               <Insets top="10.0"/>
+           </padding>
+        </CheckBox>
+    </VBox>
+    <VBox alignment="TOP_CENTER" prefHeight="200.0" spacing="10.0" GridPane.columnSpan="4" GridPane.rowIndex="4">
+        <CheckBox fx:id="add_shift" mnemonicParsing="false" onMouseClicked="#allow_add_shift" text="Přídat službu, která není v seznamu" />
+        <Text fx:id="add_shift_text" opacity="0.25" strokeType="OUTSIDE" strokeWidth="0.0" text="Uveďte délku trvání v hodinách" />
+        <TextField fx:id="add_shift_field" disable="true" maxWidth="200.0" promptText="0" />
+      <Button mnemonicParsing="false" onAction="#SetShifts_confirm" text="Potvrdit" />
+      <padding>
+         <Insets top="20.0" />
+      </padding>
+    </VBox>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <columnConstraints>
+      <ColumnConstraints />
+       <ColumnConstraints />
+       <ColumnConstraints />
+       <ColumnConstraints />
+       <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

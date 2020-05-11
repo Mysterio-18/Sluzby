@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.PopUpWindowsController">
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Napište požadovaný rok:" />
+      <TextField fx:id="set_year_field" prefWidth="100.0" />
+   </HBox>
+   <HBox alignment="CENTER" spacing="10.0">
+      <Button mnemonicParsing="false" text="Potvrdit" onAction="#choose_year_confirm"/>
+      <Button mnemonicParsing="false" text="Storno" onAction="#choose_year_storno"/>
+   </HBox>
+</VBox>

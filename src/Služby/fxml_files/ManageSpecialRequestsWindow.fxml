@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox prefWidth="500.0" spacing="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.PopUpWindowsController">
+    <TableView fx:id="special_requests_table" prefHeight="600.0" prefWidth="400.0">
+      <columns>
+          <TableColumn fx:id="requests_name" prefWidth="100.0" text="Jméno"/>
+          <TableColumn fx:id="requests_day" minWidth="0.0" prefWidth="100.0" text="Den"/>
+          <TableColumn fx:id="requests_time" prefWidth="100.0" text="Čas"/>
+          <TableColumn fx:id="requests_validity" prefWidth="150.0" text="Platí do (včetně)"/>
+      </columns>
+    </TableView>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+        <Button mnemonicParsing="false" onAction="#add_request" prefWidth="145.0" text="Přidat požadavek"/>
+        <Button mnemonicParsing="false" onAction="#delete_request" prefWidth="145.0" text="Smazat požadavek"/>
+        <Button mnemonicParsing="false" prefWidth="145.0" text="Upravit požadavek"/> <!--onAction="#edit_request"-->
+    </HBox>
+</VBox>

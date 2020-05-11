@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.AddSpecialRequestController">
+    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+        <Label prefWidth="120.0" text="Přidat pro:" />
+        <ComboBox fx:id="request_for" prefWidth="150.0">
+        </ComboBox>
+      <padding>
+         <Insets left="20.0" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+        <Label prefWidth="120.0" text="Který den:" />
+        <ComboBox fx:id="request_when" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Pondělí" />
+                    <String fx:value="Úterý" />
+                    <String fx:value="Středa" />
+                    <String fx:value="Čtvrtek" />
+                    <String fx:value="Pátek" />
+                    <String fx:value="Sobota" />
+                    <String fx:value="Neděle" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <padding>
+         <Insets left="20.0" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+        <Label prefWidth="120.0" text="V denní dobu" />
+      <ComboBox fx:id="request_time" prefWidth="150.0">
+          <items>
+
+          </items>
+      </ComboBox>
+
+      <padding>
+         <Insets left="20.0" />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+        <Label prefWidth="120.0" text="Platí do (včetně):" />
+        <ComboBox fx:id="request_until" prefWidth="150.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Leden" />
+                    <String fx:value="Únor" />
+                    <String fx:value="Březen" />
+                    <String fx:value="Duben" />
+                    <String fx:value="Květen" />
+                    <String fx:value="Červen" />
+                    <String fx:value="Červenec" />
+                    <String fx:value="Srpen" />
+                    <String fx:value="Září" />
+                    <String fx:value="Říjen" />
+                    <String fx:value="Listopad" />
+                    <String fx:value="Prosinec" />
+                    <String fx:value="Neurčitě" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <padding>
+         <Insets left="20.0" />
+      </padding>
+    </HBox>
+   <Button mnemonicParsing="false" onAction="#add_request_confirm" text="Potvrdit">
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin>
+   </Button>
+</VBox>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.PopUpWindowsController">
+    <TableView fx:id="workers_bilantion_table" prefHeight="600.0" editable="true">
+        <columns>
+            <TableColumn fx:id="worker_name" minWidth="100.0" prefWidth="100.0" text="Jméno"/>
+            <TableColumn fx:id="worker_bil_january" minWidth="100.0" prefWidth="100.0" text="Leden" onEditCommit="#change_bil_january"/>
+            <TableColumn fx:id="worker_bil_february" minWidth="100.0" prefWidth="100.0" text="Únor" />
+            <TableColumn fx:id="worker_bil_march" minWidth="100.0" prefWidth="100.0" text="Březen" />
+            <TableColumn fx:id="worker_bil_april" minWidth="100.0" prefWidth="100.0" text="Duben" onEditCommit="#change_bil_april"/>
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="center" prefHeight="728" prefWidth="1366" styleClass="root" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.DynamicGUIController">
+
+    <VBox alignment="CENTER" spacing="20" HBox.hgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="20.0">
+            <Button mnemonicParsing="false" text="Zapsat směny" onAction="#write_shifts"/>
+            <Button mnemonicParsing="false" text="Zobrazit směny" onAction="#display_shifts"/>
+            <Button mnemonicParsing="false" text="Nastavit roční plán" onAction="#set_year_plan"/>
+            <Button mnemonicParsing="false" text="Nastavit dovolenou" onAction="#set_free_days"/>
+            <Button mnemonicParsing="false" text="Přidat zaměstnance" />
+            <Button mnemonicParsing="false" text="Speciální požadavky" onAction="#manage_requests"/>
+            <Button fx:id="year_button" mnemonicParsing="false" onAction="#set_year"/>
+            <Button mnemonicParsing="false" text="Záloha" />
+            <Button mnemonicParsing="false" text="Změnit bilanci" onAction="#set_bil"/>
+           <padding>
+               <Insets left="10.0" />
+           </padding>
+        </HBox>
+        <ScrollPane fx:id="main_scroll" prefHeight="400.0" prefWidth="900.0" VBox.vgrow="ALWAYS">
+
+        </ScrollPane>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20">
+            <Button mnemonicParsing="false" text="Uložit změny" fx:id="save_button" onAction="#save_changes" disable="true"/>
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+        </HBox>
+    </VBox>
+
+    <HBox spacing="20">
+
+    </HBox>
+
+<!--    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding> -->
+<!--
+    <Text id="welcome-text" text="Welcome"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+
+    <Label text="User Name:"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Password:"
+           GridPane.columnIndex="0">
+        <GridPane.rowIndex>2</GridPane.rowIndex>
+    </Label>
+
+    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <HBox spacing="10" alignment="bottom_right"
+          GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button text="Sign In"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <Text fx:id="actiontarget"
+          GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+-->
+    <stylesheets>
+        <URL value="@../MW.css" />
+    </stylesheets>
+
+</HBox>

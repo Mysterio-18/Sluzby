@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Služby.PopUpWindowsController">
+   <Rectangle fx:id="choose_january" fill="WHITE" height="50.0" onMouseClicked="#choose_month" stroke="BLACK" strokeType="INSIDE" width="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+   <Rectangle fx:id="choose_february" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   <Rectangle fx:id="choose_march" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+   <Rectangle fx:id="choose_april" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   <Rectangle fx:id="choose_may" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Rectangle fx:id="choose_june" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <Rectangle fx:id="choose_july" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   <Rectangle fx:id="choose_august" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   <Rectangle fx:id="choose_september" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   <Rectangle fx:id="choose_october" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+   <Rectangle fx:id="choose_november" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   <Rectangle fx:id="choose_december" fill="WHITE" height="50.0" stroke="BLACK" onMouseClicked="#choose_month" strokeType="INSIDE" width="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   <Text mouseTransparent="true" text="Leden" GridPane.halignment="CENTER" />
+   <Text mouseTransparent="true" text="Únor" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+   <Text mouseTransparent="true" text="Březen" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+   <Text mouseTransparent="true" text="Duben" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+   <Text mouseTransparent="true" text="Květen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+   <Text mouseTransparent="true" text="Červen" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+   <Text mouseTransparent="true" text="Červenec" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+   <Text mouseTransparent="true" text="Srpen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+   <Text mouseTransparent="true" text="Září" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+   <Text mouseTransparent="true" text="Říjen" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   <Text mouseTransparent="true" text="Listopad" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   <Text mouseTransparent="true" text="Prosinec" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
